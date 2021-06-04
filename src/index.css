@@ -155,3 +155,7 @@ li span.active::before {
 	border-radius: 50%;
 	background: #fff;
 }
+
+.loaderCycle {
+	height: 10px;
+}
