@@ -24,6 +24,12 @@ const containerVariants = {
 			delay: 0.5,
 		},
 	},
+	exit: {
+		x: '-100vw',
+		transition: {
+			ease: 'easeInOut',
+		},
+	},
 };
 
 const nextVariants = {
@@ -64,6 +70,7 @@ const Base = ({ addBase, pizza }) => {
 			variants={containerVariants}
 			initial='hidden' //this two lines can be inherited by children, eg: down below, div with class='next'
 			animate='visible' //this two lines can be inherited by children, eg: down below, div with class='next'
+			exit='exit'
 		>
 			<h3>Step 1: Choose Your Base</h3>
 			<ul>
@@ -90,10 +97,7 @@ const Base = ({ addBase, pizza }) => {
 					// animate='visible'
 				>
 					<Link to='/toppings'>
-						<motion.button
-							variants={buttonVariants}
-							whileHover='hover'
-						>
+						<motion.button variants={buttonVariants} whileHover='hover'>
 							Next
 						</motion.button>
 					</Link>
