@@ -32,7 +32,15 @@ const Base = ({ addBase, pizza }) => {
 					transition={{ type: 'spring', stiffness: 120 }}
 				>
 					<Link to='/toppings'>
-						<button>Next</button>
+						<motion.button
+							whileHover={{
+								scale: 1.1,
+								textShadow: '0px 0px 8px rgb(255, 255, 255)',
+								boxShadow: '0px 0px 8px rgb(255, 255, 255)',
+							}}
+						>
+							Next
+						</motion.button>
 					</Link>
 				</motion.div>
 			)}
