@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Loader from './Loader';
 
+
 const buttonVariants = {
 	hover: {
 		scale: 1.1,
@@ -53,7 +54,9 @@ const Home = () => {
 				</motion.button>
 			</Link>
 
-			<Loader/>
+			<Loader />
+
+			
 		</motion.div>
 	);
 };
