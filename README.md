@@ -7,9 +7,10 @@
 #### Instalation Guide
 
 1. Clone the project
-..* ``git clone git@github.com:zeapherine/framer-motion.git`` </br>
+..* ``git clone git@github.com:zeapherine/framer-motion.git`` 
 2. Navigate to the project directory.
-..* ``cd framer-motion`` </br>
+..* ``cd framer-motion``
 3. Run ``npm i && npm start``
+
 
 
